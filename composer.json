@@ -1,5 +1,5 @@
 {
-    "name": "wazaari/monolog-mysql",
+    "name": "arjanderuyter/monolog-mysql",
     "description": "A handler for Monolog that sends messages to MySQL",
     "keywords": ["log", "logging", "monolog", "mysql", "database"],
     "homepage": "https://github.com/waza-ari/monolog-mysql",
