@@ -182,12 +182,14 @@ class MySQLHandler extends AbstractProcessingHandler
         }
 
         //'context' contains the array
+	$file = (isset($record['file']))?$record['file']:'';
+	$line = (isset($record['line']))?$record['line']:'';
         $contentArray = array_merge(array(
                                         'channel' => $record['channel'],
                                         'level' => $record['level'],
                                         'message' => $record['message'],
-					'file' => $record['file'],
-					'line' => $record['line'],
+					'file' => $file,
+					'line' => $line,
                                         'time' => $record['datetime']->format('U')
                                     ), $record['context']);
 
